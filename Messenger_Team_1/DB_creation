@@ -1,0 +1,20 @@
+drop database msg_db;
+create database msg_db;
+use msg_db;
+
+create table msg_log(
+	id int not null auto_increment,	
+	date varchar(30),	
+		msg varchar(260),	
+		primary key(id)
+);
+drop database user_db;
+create database user_db;
+use user_db;
+
+create table user_table(
+	id varchar(30) not null ,	
+		pw varchar(260),
+		nickName varchar(30),	
+		primary key(id)
+);
